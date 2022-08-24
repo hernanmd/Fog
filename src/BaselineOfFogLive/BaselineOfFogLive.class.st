@@ -19,7 +19,7 @@ BaselineOfFogLive >> baseline: spec [
 			spec package: 'SolidityTestingResources' with: [ spec repository: 'github://smartanvil/SolidityTestingResources' ].
 			spec package: 'FogEVM' with: [ spec repository: 'github://hernanmd/FogEVM' ].
 			spec package: #Hexadecimal with: [ spec repository: 'github://sbragagnolo/Hexadecimal' ].
-			spec package: 'NeoJSON' with: [ spec 	repository: 'github://svenvc/NeoJSON/repository' ].
+			spec baseline: 'NeoJSON' with: [ spec repository: 'github://svenvc/NeoJSON/repository' ].
 
 			spec package: #FogLive with: [ spec requires: #('FogComm' 'Keccak' 'SmaccSolidity' #Hexadecimal) ].
 			spec package: #FogLiveTests with: [ spec requires: #('FogLive' 'FogEVM' 'ParametrizedTests') ] ]
